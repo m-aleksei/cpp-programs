@@ -1,0 +1,28 @@
+Numerical integration by the Monte Carlo method. / Численное интегрирование методом Монте-Карло. 
+
+For a given function f: [0,1] -> R, approximately calculate the integral S01 f (x) dx using 
+the Monte Carlo method. The number of trials is not less than 10 ^ 9.
+
+Для заданной функции f: [0,1] -> R  приближенно вычислить интеграл S01 f(x)dx с помощью
+метода Монте-Карло. Количество испытаний не меньше, чем 10^9.
+
+// ---------------------------------------------------------------------------------------------
+
+The essence of the method is that the integral is calculated in a rectangle
+by throwing random points. Proceeding from the geometric meaning of a definite integral 
+it follows that the integral is the area under the graph integrand function. Then we will 
+"throw" random points and talk about "hit" only when the point has fallen under the graph 
+of this function, but is in a rectangle. After N trials (i.e., "throwing" random points 
+(x, y) into a rectangle), we get K hits. Then the integral can be approximated by 
+the formula: I = (K / N) * S, where S is the square of the rectangle.
+
+Суть метода заключается в том, что интеграл вычисляется в прямоугольнике 
+при помощи "бросания" случайных точек. Исходя из геометрического смысла 
+определенного интеграла следует, что интеграл - есть площадь под графиком
+подынтегральной функции. Тогда будем "бросать" случайные точки и говорить
+о "попадании" только тогда, когда точка попала под график этой функции, но 
+находится в прямоугольнике. После N испытаний (т.е. "бросков" случайных 
+точек (х,у) в прямоугольник) получим К попаданий. Тогда интеграл приближенно
+можно вычислить по формуле: I = (K/N)*S , где S - площадь прямогульника.
+
+// ---------------------------------------------------------------------------------------------
