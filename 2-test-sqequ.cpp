@@ -1,4 +1,4 @@
-// console_test.cpp: главный файл проекта.
+// console_test.cpp
 
 #include <iostream>
 #include <stdio.h>
@@ -19,31 +19,31 @@ int main()
 	printf("------------- a*x^2 + b*x + c = 0 ------------\n");
 	printf("\n");
 
-	double a; printf("Input a (coef by x^2): "); cin >> a; // коэф при X^2
-	double b; printf("Input b (coef by x  ): "); cin >> b; // коэф при X
-	double c; printf("Input c (free coef  ): "); cin >> c; // свободный коэф
+	double a; printf("Input a (coef by x^2): "); cin >> a; // coef by X^2
+	double b; printf("Input b (coef by x  ): "); cin >> b; // coef by X
+	double c; printf("Input c (free coef  ): "); cin >> c; // free coef
 	double d; double x1; double x2;
 
-	if (a+b+c == 0) { // 0 = 0 при любых х
+	if (a+b+c == 0) { // 0 = 0 for all values of x
 		printf("----------------------------------------------\n");
 		printf("It seems there's no equation! \n"); 
 		getch(); return 0;}
 
 	d = b*b - 4*a*c;
 
-	if (d < 0) { // D < 0, уравнение не имеет вещественных корней
+	if (d < 0) { // D < 0, no Real roots
 		printf("----------------------------------------------\n");
 		printf("Discriminant must be greater than 0! \n"); 
 		getch(); return 0;}
 	
-	if (d == 0) { // D = 0, уравнение имеет один корень
+	if (d == 0) { // D = 0, one root
 		x1 = (b*(-1.0))/(a*2.0);
 		printf("----------------------------------------------\n");
 		printf("Equation     : (%.1f",a); printf(")x^2 + (%.1f",b); printf(")x + (%.1f",c); printf(") = 0 \n");
 		printf("Discriminant : D = %.4f \n", d);
 		printf("Root         : x = %.4f \n", x1);
 	}
-	else { // D > 0, уравнение имеет два корня
+	else { // D > 0, two roots
 		x1 = ((b*(-1.0)) + sqrt(d)) /(a*2.0);
 		x2 = ((b*(-1.0)) - sqrt(d)) /(a*2.0);
 		printf("----------------------------------------------\n");
@@ -54,6 +54,6 @@ int main()
 	}
 
 
-	getch(); // задержка консоли
+	getch();
 	return 0;
 }
