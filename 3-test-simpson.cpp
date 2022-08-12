@@ -1,5 +1,3 @@
-// console_test.cpp: главный файл проекта.
-
 #include <iostream>
 #include <stdio.h>
 #include <cmath>
@@ -12,18 +10,18 @@ using namespace std;
 
 double getFunctionValue(double x)
 {
-	return pow((2*x-1),6); // подыинтегральная функция
-	// return 2*x+3/sqrt(x); // границы 1;4 ответ 21
-	// return pow((2*x-1),6); // границы 0;1 ответ 0.1428 (одна-седьмая)
+	return pow((2*x-1),6); // РїРѕРґС‹РёРЅС‚РµСЂР°Р»СЊРЅР°СЏ С„СѓРЅРєС†РёСЏ
+	// return 2*x+3/sqrt(x); // РіСЂР°РЅРёС†С‹ 1;4 РѕС‚РІРµС‚ 21
+	// return pow((2*x-1),6); // РіСЂР°РЅРёС†С‹ 0;1 РѕС‚РІРµС‚ 0.1428 (РѕРґРЅР°-СЃРµРґСЊРјР°СЏ)
 
 }
 
 int main()
 {
 	// --- Input ---------------------------------
-	double a; printf("Input a: "); cin >> a; // границы интеграла
-	double b; printf("Input b: "); cin >> b; // границы интеграла
-	int n; printf("Input n(integer EVEN): "); cin >> n; // число разбиений
+	double a; printf("Input a: "); cin >> a; // РіСЂР°РЅРёС†С‹ РёРЅС‚РµРіСЂР°Р»Р°
+	double b; printf("Input b: "); cin >> b; // РіСЂР°РЅРёС†С‹ РёРЅС‚РµРіСЂР°Р»Р°
+	int n; printf("Input n(integer EVEN): "); cin >> n; // С‡РёСЃР»Рѕ СЂР°Р·Р±РёРµРЅРёР№
 	if (n % 2 != 0) {
 		printf("----------------------- \n");
 		printf("Input n must be EVEN! \n"); 
@@ -32,7 +30,7 @@ int main()
 	// -------------------------------------------
 	double h = (b-a)/(n*1.0); 
 	double s; double t;
-	// --- Решение интеграла методом Симпсона ----
+	// --- Р РµС€РµРЅРёРµ РёРЅС‚РµРіСЂР°Р»Р° РјРµС‚РѕРґРѕРј РЎРёРјРїСЃРѕРЅР° ----
 	s = getFunctionValue(a) + getFunctionValue(b);
 	for (int k = 1; k <= (n/2-1); k++) {
 		t = a + (2 * k) * h;
@@ -47,7 +45,7 @@ int main()
 	printf("----------------------- \n");
 	printf("Integral S(x) = %.4f \n", s);
 	printf("Step h = %.10f \n", h);
-	//cout << "Hello World " << N << endl; // тоже самое что и принт
-	getch(); // задержка консоли
+	
+	getch(); // Р·Р°РґРµСЂР¶РєР° РєРѕРЅСЃРѕР»Рё
 	return 0;
 }
