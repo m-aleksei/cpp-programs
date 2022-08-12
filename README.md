@@ -8,7 +8,7 @@ This repository contains solutions on C++.
     / Решение определенного интеграла методом Монте-Карло (+распараллеливание Winapi и OpenMP)
 2. Finding roots in Quadratic equations
     / Нахождение корней для квадратных уравнений
-3. Calculating a certain integral for a given function by Simpson's rule
+3. Calculating a certain integral for a given function by composite Simpson's rule
     / Вычисление определенного интеграла для заданной функции методом Симпсона
 4. Building the Fibonacci Numbers Array to a given number, calculating the amount and number of Numbers of the sequence
     / Построение последовательности Фибоначчи до заданного числа, вычисление суммы и количества чисел последовательности
