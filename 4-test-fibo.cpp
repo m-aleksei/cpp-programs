@@ -1,5 +1,3 @@
-// console_test.cpp: главный файл проекта.
-
 #include <iostream>
 #include <stdio.h>
 #include <cmath>
@@ -18,7 +16,7 @@ int main()
 	printf("-----------------------------------------------\n");
 	printf("\n");
 
-	int N; printf("Input (integer) N: "); cin >> N; // число, до которого строить
+	int N; printf("Input (integer) N: "); cin >> N; // С‡РёСЃР»Рѕ, РґРѕ РєРѕС‚РѕСЂРѕРіРѕ СЃС‚СЂРѕРёС‚СЊ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ С‡РёСЃРµР» Р¤РёР±РѕРЅР°С‡РёРё
 	int F1 = 0; int F2 = 1; int F3; double S; double k;
 	
 	switch(N)
@@ -120,11 +118,5 @@ int main()
 
 	getch(); 
 	return 0;
-	// --- Output --------------------------------
-	//printf("----------------------- \n");
-	//printf("Integral S(x) = %.4f \n", s);
-	//printf("Step h = %.10f \n", h);
-	//cout << "Hello World " << N << endl; // тоже самое что и принт
-	//getch(); // задержка консоли
-	//return 0;
+
 }
