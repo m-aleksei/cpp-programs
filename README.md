@@ -1,7 +1,7 @@
 # cpp-programs
 This repository contains solutions on C++.
 
-// last update: 12.08.2022
+// last update: 16.08.2022
 
 // LIST OF PROGRAMS
 1. Monte Carlo method (numerical integration + parallel computations with Winapi & OpenMP) 
