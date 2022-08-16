@@ -1,5 +1,3 @@
-// console_test.cpp: главный файл проекта.
-
 #include <iostream>
 #include <stdio.h>
 #include <cmath>
@@ -180,11 +178,5 @@ int main()
 
 	getch(); 
 	return 0;
-	// --- Output --------------------------------
-	//printf("----------------------- \n");
-	//printf("Integral S(x) = %.4f \n", s);
-	//printf("Step h = %.10f \n", h);
-	//cout << "Hello World " << N << endl; // тоже самое что и принт
-	//getch(); // задержка консоли
-	//return 0;
+
 }
