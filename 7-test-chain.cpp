@@ -1,5 +1,3 @@
-// console_test.cpp: главный файл проекта.
-
 #include <iostream>
 #include <stdio.h>
 #include <cmath>
